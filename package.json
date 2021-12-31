@@ -4,7 +4,9 @@
   "description": "req an json have environment variables",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node node_modules/webpack/bin/webpack.js --mode production --progress --hide-modules",
+    "build": "node node_modules/webpack/bin/webpack.js --mode production --progress --hide-modules"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/phamdaiminhquan/tmaenvironment/issues"
   },
-  "homepage": "https://github.com/phamdaiminhquan/tmaenvironment#readme"
+  "homepage": "https://github.com/phamdaiminhquan/tmaenvironment#readme",
+  "devDependencies": {
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
+  }
 }
